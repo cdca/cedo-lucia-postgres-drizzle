@@ -6,11 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "introspect": "drizzle-kit introspect:pg --config=drizzle.config.ts",
+    "generate": "drizzle-kit generate:pg --config=drizzle.config.ts",
+    "migrate": "tsx -r dotenv/config lib/database/migrate.ts",
+    "studio": "drizzle-kit studio",
+    "postinstall": "tsx -r dotenv/config lib/database/migrate.ts"
   },
   "dependencies": {
     "@lucia-auth/adapter-drizzle": "^1.0.3",
     "arctic": "^1.2.1",
+    "dotenv": "^16.4.5",
     "drizzle-orm": "^0.30.1",
     "drizzle-zod": "^0.5.1",
     "next": "14.1.3",
@@ -22,6 +28,7 @@
   },
   "devDependencies": {
     "@types/node": "^20",
+    "@types/pg": "^8.11.2",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
