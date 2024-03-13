@@ -4,6 +4,7 @@ This is a simple demo example of an auth application using Next.js, Lucia
 auth, Drizzle, and PostgreSQl.
 
 [Link to the original blog post.](https://www.cedo.dev/blog/authentication-with-lucia-next-drizzle-postgres)
+
 [Link to the live demo.](https://lucia.cedo.dev/)
 
 ## Configuration
