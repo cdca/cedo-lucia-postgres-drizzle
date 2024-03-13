@@ -15,8 +15,8 @@ export default async function Home() {
   return (
     <div className="p-10 flex flex-col gap-4 h-[100vh] overflow-hidden">
       <p className="bg-gray-50 w-full text-md text-slate-600 border p-4 rounded-md">
-        This is a simple demo example of a auth application using Next.js, Lucia
-        auth, Drizzle, and PostgreSQl.{" "}
+        This is a simple demo example of an auth application using Next.js,
+        Lucia auth, Drizzle, and PostgreSQl.
         <Link
           target="_blank"
           className="underline font-medium text-blue-600"
